@@ -1,0 +1,202 @@
+[
+    {
+        "key": "policyNumber",
+        "label": "Policy Number",
+        "dataKey": "data.policyNumber",
+        "type": "link",
+        "visible": true,
+        "hideable": false,
+        "class": "queue-grid__link",
+        "onClickTargetKey": "selectedWorkItemId",
+        "outputProperty": "_id"
+    },
+    {
+        "key": "primaryNamedInsured",
+        "label": "Insured Name",
+        "dataKey": "data.primaryNamedInsured",
+        "visible": true,
+        "hideable": false
+    },
+    {
+        "key": "transactionType",
+        "label": "Work Item Type",
+        "dataKey": "data.transactionType",
+        "visible": true,
+        "hideable": false,
+        "filterable": true,
+        "filterOptions": [
+            "New",
+            "Renewal",
+            "Policy Change"
+        ]
+    },
+    {
+        "key": "priority",
+        "label": "Priority",
+        "dataKey": "data.priority",
+        "type": "badge",
+        "visible": true,
+        "hideable": false,
+        "classKey": "priorityClass"
+    },
+    {
+        "key": "assigneeName",
+        "label": "Assigned To",
+        "dataKey": "data.assigneeName",
+        "visible": true,
+        "hideable": false,
+        "filterable": true
+    },
+    {
+        "key": "workItemStatus",
+        "label": "Work Item Status",
+        "dataKey": "data.workItemStatus",
+        "type": "badge",
+        "visible": true,
+        "filterable": true,
+        "hideable": false,
+        "filterOptions": [
+            "New",
+            "Previously Reviewed"
+        ],
+        "classKey": "workItemStatusClass",
+        "adornmentIconKey": "flag",
+        "adornmentTooltipKey": "tooltip"
+    },
+    {
+        "key": "waitingForFac",
+        "label": "Waiting for Fac",
+        "dataKey": "data.flags.waitingForFac",
+        "visible": false,
+        "filterable": true,
+        "filterOnly": true,
+        "filterOptions": [
+            "Yes", 
+            "No"
+        ]
+    },
+    {
+        "key": "caseApprovalPending",
+        "label": "Case Approval Pending",
+        "dataKey": "data.flags.caseApprovalPending",
+        "visible": false,
+        "filterable": true,
+        "filterOnly": true,
+        "filterOptions": [
+            "Yes", 
+            "No"
+        ]
+    },
+    {
+        "key": "bindStatus",
+        "label": "Policy Status",
+        "dataKey": "data.bindStatus",
+        "visible": true,
+        "filterable": true,
+        "hideable": false,
+        "filterOptions": [
+            "Bound",
+            "Unbound"
+        ]
+    },
+    {
+        "key": "accountSize",
+        "label": "Account Size",
+        "dataKey": "data.accountSize",
+        "filterable": true,
+        "filterOptions": [
+            "Regular",
+            "Large Account"
+        ],
+        "visible": false
+    },
+    {
+        "key": "lineOfBusiness",
+        "label": "Line of Business",
+        "dataKey": "data.lineOfBusiness",
+        "filterable": true,
+        "filterOptions": [
+            "BOP"
+        ],
+        "visible": false
+    },
+    {
+        "key": "accountClassification",
+        "label": "Account Classification",
+        "dataKey": "data.accountClassification",
+        "filterable": true,
+        "visible": false,
+        "filterOptions": [
+            "Agricultural",
+            "Commercial"
+        ]
+    },
+    {
+        "key": "companyName",
+        "label": "Company",
+        "visible": false,
+        "hideable": true,
+        "filterable": true,
+        "dataKey": "data.companyName",
+        "filterOptions": [
+            "Farm Family",
+            "United Farm Family Insurance Co."
+        ]
+    },
+    {
+        "key": "primaryState",
+        "label": "State",
+        "visible": false,
+        "hideable": true,
+        "filterable": true,
+        "multiselectStyle": "dropdown",
+        "dataKey": "data.primaryState",
+        "filterOptionsReferenceKey": "dtStatesForFilter"
+    },
+    {
+        "key": "agentName",
+        "label": "Agent Name",
+        "dataKey": "data.agentName",
+        "visible": false,
+        "filterable": true,
+        "filterOptions": []
+    },
+    {
+        "key": "agentNumber",
+        "label": "Agent Number",
+        "dataKey": "data.agentNumber",
+        "visible": false,
+        "filterable": true,
+        "filterOptions": []
+    },
+    {
+        "key": "agentBindingAuthority",
+        "label": "Binding Authority",
+        "dataKey": "data.agentBindingAuthority",
+        "visible": false,
+        "filterable": true,
+        "filterOptions": [
+            "Standard",
+            "Producer",
+            "Limited"
+        ]
+    },
+    {
+        "key": "transactionEffectiveDate",
+        "label": "Transaction Effective Date",
+        "dataKey": "data.transactionEffectiveDate",
+        "type": "date",
+        "visible": false,
+        "filterable": true,
+        "dateFilterType": "range"
+    },
+    {
+        "key": "policyEffectiveDate",
+        "label": "Policy Effective Date",
+        "dataKey": "data.policyEffectiveDate",
+        "type": "date",
+        "visible": false,
+        "filterable": true,
+        "dateFilterType": "range"
+    }
+]
